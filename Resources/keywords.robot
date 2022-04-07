@@ -60,7 +60,7 @@ Delete Model
     Sleep  1s
 
 Log Out User
-    Sleep  1s
+    #Sleep  1s
     Wait Until Page Contains Element  ${USERACCOUNT}
     Click Element  ${USERACCOUNT}
     Wait Until Page Contains Element  ${ACCOUNTLIST}
