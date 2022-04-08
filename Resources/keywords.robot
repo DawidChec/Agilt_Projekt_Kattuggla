@@ -5,6 +5,7 @@ Begin Web Test
 
 Go To Web Page
     Go to  ${URL}
+    Set Selenium Speed  0.5s
     Wait Until Page Contains Element  //*[@id="app"]/div/main/div/div/div/div/div/div[2]/button[1]
 
 Log in User
