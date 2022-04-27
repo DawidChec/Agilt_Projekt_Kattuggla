@@ -19,7 +19,6 @@ Show All Workspaces
     Wait Until Page Contains Element  ${CREATEWORKSPACE}
     Click Element  ${MAINMENU}
 
-
 *** Variables ***
 ${TEAMKATTUGGLA}  //*[@id="app"]/div[3]/div/div[2]/div[5]/a/div[1]/div
 ${KATTUGGLA}  //*[@id="app"]/div[3]/div/div[2]/div[4]/a/div[1]/div
