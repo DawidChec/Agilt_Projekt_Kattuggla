@@ -22,6 +22,9 @@ User Can Swich Workspace
     Click Element  ${MFW1}
     Wait Until Location Is  https://stag.labelf.ai/main/66/models/view
     Sleep  1s
+    Wait Until Page Contains Element  ${MFW2}
+    Click Element  ${MFW2}
+    Sleep  1s
     Wait Until Page Contains Element  ${MAINMENU}
     Click Element  ${MAINMENU}
 
