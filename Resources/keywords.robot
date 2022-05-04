@@ -27,13 +27,13 @@ Log in User
     Wait Until Page Contains  Welcome to Labelf!
 
 Select Team Kattuggla As Workspace
-    Sleep  1s
-    Wait Until Page Contains Element  ${MAINMENU}
-    Click Element  ${MAINMENU}
+    Sleep 1s
+    Wait Until Page Contains Element ${MAINMENU}
+    Click Element ${MAINMENU}
     Wait Until Page Contains  Current Workspace:
-    Scroll Element Into View  ${MYWORKSPACE}
-    Click Element  ${MYWORKSPACE}
-    Wait Until Location Is  https://stag.labelf.ai/main/66/models/view
+    Scroll Element Into View ${TEAMKATTUGGLAWORKSPACE}
+    Click Element ${TEAMKATTUGGLAWORKSPACE}
+    Wait Until Location Is  https://stag.labelf.ai/main/68/models/view
     #Ceck the id in the link if its the right workspace
     Wait Until Page Contains  My first workspace
     Click Element  //*[@id="app"]/div[6]/div[1]/nav/div/div[3]/div/button
