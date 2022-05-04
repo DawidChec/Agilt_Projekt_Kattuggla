@@ -28,11 +28,11 @@ Log in User
 
 Select Team Kattuggla As Workspace
     Sleep 1s
-    Wait Until Page Contains Element ${MAINMENU}
-    Click Element ${MAINMENU}
+    Wait Until Page Contains Element  ${MAINMENU}
+    Click Element  ${MAINMENU}
     Wait Until Page Contains  Current Workspace:
-    Scroll Element Into View ${TEAMKATTUGGLAWORKSPACE}
-    Click Element ${TEAMKATTUGGLAWORKSPACE}
+    Scroll Element Into View  ${TEAMKATTUGGLAWORKSPACE}
+    Click Element  ${TEAMKATTUGGLAWORKSPACE}
     Wait Until Location Is  https://stag.labelf.ai/main/68/models/view
     #Ceck the id in the link if its the right workspace
     Wait Until Page Contains  My first workspace
