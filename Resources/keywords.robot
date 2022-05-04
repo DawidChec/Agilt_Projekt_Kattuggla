@@ -19,28 +19,24 @@ Go To Web Page
     Wait Until Page Contains Element  //*[@id="app"]/div/main/div/div/div/div/div/div[2]/button[1]
 
 Log in User
-    Input Text  ${MAIL}   checdd@gmail.com
-    Input Text  ${PASSWORD}  kufowo92
+    Input Text  ${MAIL}   jakob.nilsson@iths.se
+    Input Text  ${PASSWORD}  44321jJa
     Wait Until Element Is Visible  ${COOKIEDOWN}
     Click Element  ${COOKIEDOWN}
     Click Element   ${LOGINBUTTON}
     Wait Until Page Contains  Welcome to Labelf!
 
 Select Team Kattuggla As Workspace
-    Sleep  1s
-    #Wait Until Page Contains Element  ${MAINMENU}
-    #Click Element  ${MAINMENU}
-    #Wait Until Page Contains Element  ${MAINMENULIST}
-    #Click Element  ${MAINMENUTEAMKATTUGGLA}
-    #Wait Until Page Contains Element  ${MAINMENU}
-    #Click Element  ${MAINMENU}
-    #Sleep  1s
-    #Wait Until Page Contains Element  ${ATTRIBUTSTRINGTEAMKATTUGGLA}
-    #Sleep  1s
-    #Element Text Should Be  ${ATTRIBUTSTRINGTEAMKATTUGGLA}  TEAM KATTUGGLA
-    Wait Until Location Is  https://stag.labelf.ai/main/66/models/view
+    Sleep 1s
+    Wait Until Page Contains Element  ${MAINMENU}
+    Click Element  ${MAINMENU}
+    Wait Until Page Contains  Current Workspace:
+    Scroll Element Into View  ${TEAMKATTUGGLAWORKSPACE}
+    Click Element  ${TEAMKATTUGGLAWORKSPACE}
+    Wait Until Location Is  https://stag.labelf.ai/main/68/models/view
     #Ceck the id in the link if its the right workspace
     Wait Until Page Contains  My first workspace
+    Click Element  //*[@id="app"]/div[6]/div[1]/nav/div/div[3]/div/button
 
 Create A Model
     Sleep  1s
